@@ -63,7 +63,7 @@ The Stores controller needs to suport the following actions: index, create, new,
 
 ### BooksController
 
-The Books controller needs to support the following actions: index, new, create, show, edit, update, destroy. These actions should perform CRUD operations on the `Book` model. Remember to check vallidations when creating and updating and object. The `new` from includes a nested form written for you for its associated model. If `params[:book][:author_attributes]` contains nonblank fields a new author should be created, otherwise the author should be found from `params[:author_id]`. If these seems tricky, try googling `accepts_nested_attributes_ofr` and `reject_if`.
+The Books controller needs to support the following actions: index, new, create, show, edit, update, destroy. These actions should perform CRUD operations on the `Book` model. Remember to check vallidations when creating and updating and object. The `new` from includes a nested form written for you for its associated model. If `params[:book][:author_attributes]` contains nonblank fields a new author should be created, otherwise the author should be found from `params[:author_id]`. If these seems tricky, try googling `accepts_nested_attributes_for` and `reject_if`.
 
 Notice that the index action is linked to two routes! The `index.html.erb` expects an instance variable `@books` to be set. If the user goes to the `/books` route, `@books` should be an array of all books. If they get their from `/stores/:store_id/books`, then `@books` should be all the books at a given store. Can we look at the `params` hash to see which route we came from?
 
