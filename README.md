@@ -1,5 +1,7 @@
 # Rails Book Store
 
+It's time to show off everything you've learned about Rails development!
+
 ## Objectives
 + ActiveRecord Migrations and Associations
 + ActiveRecord Validations
@@ -13,15 +15,15 @@ You've been contracted by a book seller to work on the back end of their site! T
 
 ### Store
 
-Each of their locations should be represented by a `Store` model. Stores must be able to carry multiple books. Additionally, they want to keep track of the name and phone number for each Store. Phone numbers should always be saved in a `xxx-xxx-xxxx` format. It should be easy to look up all the unique authors whose books are sold at a particular store.
+Each of their locations should be represented by a `Store` model. Stores must be able to carry multiple books. Additionally, they want to keep track of the name and phone number for each Store. Phone numbers are strings in `xxx-xxx-xxxx` format. Stores also have many authors through books, but make sure that `Store#authors` returns only unique authors.
 
 ### Book
 
-This company only deals in books written by one author and they need to also keep track of the books title and its price. They don't give any books away, so all books should cost more than $0.00.
+This company only deals in books written by one author and they need to also keep track of the books title and its price. Every book must have a title and a price greater than 0.
 
 ### Author
 
-Authors, of course, can write multiple books and this company also wants to save a `first_name` and `last_name` for each author. It should also be easy to look up all the unique stores which carry a book by a particular author. Authors should not be able to have the same first *and* last name.
+Authors, of course, can write multiple books and this company also wants to save a `first_name` and `last_name` for each author. Authors should not be able to have the same first *and* last name, but two authors may have the same first name if their last names are different. Authors also have many stores through their books and `Author#stores` should return only unique stores. 
 
 ##### Hint
 
