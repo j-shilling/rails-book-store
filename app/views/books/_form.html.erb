@@ -1,0 +1,39 @@
+<ol>
+  <% @book.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ol>
+
+<%= form_for @book do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </p>
+
+  <p>
+    <%= f.label :author %>
+    <%= f.collection_select :author_id, Author.all, :id, :full_name %>
+
+    <p>
+      Or create a new author:<br>
+      <%= f.fields_for :author, Author.new do |author| %>
+        <%= author.label :first_name %>
+        <%= author.text_field :first_name %>
+        <%= author.label :last_name %>
+        <%= author.text_field :last_name %>
+      <% end %>
+    </p>
+  </p>
+
+  <p>
+    <%= f.label :stores %><br>
+    <%= f.collection_check_boxes :store_ids, Store.all, :id, :name %>
+  </p>
+  
+  <%= f.submit %>
+<% end %>

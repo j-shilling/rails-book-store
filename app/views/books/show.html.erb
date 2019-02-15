@@ -1,0 +1,15 @@
+<h1><%= @book.title %></h1>
+<p>By <%= link_to @book.author.full_name, author_path(@book.author) %> </p>
+
+<p>
+  Available at <%= pluralize @book.stores.count, "store" %>
+</p>
+
+<ul>
+  <% @book.stores.each do |store| %>
+    <li><%= link_to store.name, store_path(store) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to "All Books", books_path %>

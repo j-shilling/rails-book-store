@@ -1,0 +1,19 @@
+<ol>
+  <% @store.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+  <% end %>
+</ol>
+
+<%= form_for @store do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :phone_number %>
+    <%= f.telephone_field :phone_number %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

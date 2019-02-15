@@ -1,0 +1,16 @@
+<h1><%= pluralize(@authors.count, 'Authors') %></h1>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+
+  <% @authors.each do |author| %>
+    <tr>
+      <td><%= author.first_name %></td>
+      <td><%= author.last_name %></td>
+      <td><%= link_to 'show', author_path(author) %></td>
+    </tr>
+  <% end %>
+</table>  

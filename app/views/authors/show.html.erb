@@ -1,0 +1,17 @@
+<h1><%= @author.full_name %></h1>
+
+<h2><%= pluralize(@author.books.count, "Books") %></h2>
+<ol>
+  <% @author.books.each do |book| %>
+    <li><%= link_to book.title, book_path(book) %></li>
+  <% end %>
+</ol>
+
+<h2><%= pluralize(@author.stores.count, "Stores") %></h2>
+<ol>
+  <% @author.stores.each do |store| %>
+    <li><%= link_to store.name, store_path(store) %></li>
+  <% end %>
+</ol>
+  
+<%= link_to "All Authors", authors_path %>
