@@ -3,6 +3,9 @@
 ## Objectives
 + ActiveRecord Migrations and Associations
 + ActiveRecord Validations
++ Understanding RESTful Routes
++ Performing CRUD actions in Rails controllers
++ Using strong params to parse nested parameters
 
 ## Domain
 
