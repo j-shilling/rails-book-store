@@ -17,13 +17,6 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(book_params)
-
-    if @book.save
-      redirect_to book_path(@book)
-    else
-      render :new
-    end
   end
 
   def show
@@ -41,12 +34,6 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    @book.destroy
-    if @store.nil?
-      redirect_to books_path
-    else
-      redirect_to store_books_path(@store)
-    end
   end
 
   private
@@ -60,16 +47,6 @@ class BooksController < ApplicationController
   end
 
   def book_params
-    params.require(:book).permit(
-      :title,
-      :price,
-      :author_id,
-      author_attributes: [
-        :first_name,
-        :last_name
-      ],
-      store_ids: []
-    )
   end
 
 end

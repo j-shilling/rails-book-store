@@ -1,8 +1,19 @@
 # Rails Book Store
 
-## Objectives
-+ ActiveRecord Migrations and Associations
-+ ActiveRecord Validations
+# CONGRADULATIONS YOUR ALMOST DONE!!!
+
+So, this app is big, *real* big, but also most of it is done for you. Take a deeeeeeep breath, relax, and remember that you **got** this. Some words of advice:
+
+1. Read over the deliverables and get a sense of what this app is suppose to do.
+2. Take a look at the starter code and notice how much of it is already done for you:
+    1. **The Views**--already done
+	2. **The routes.rb file**--don't worry about it
+	3. **The three controllers**--got you started on 'em
+3. Now think about how far you've come over the last couple weeks. You've come a long way. You know what your doing. You're ready for this.
+4. Remember that there's more than one way to do almost everything--the *best* answer right now is the one that works.
+5. Use Google. Read documentation. Notice the hints.
+
+# GO FOR IT!
 
 ## Domain
 

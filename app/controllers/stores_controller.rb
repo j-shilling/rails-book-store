@@ -27,11 +27,6 @@ class StoresController < ApplicationController
   end
 
   def update
-    if @store.update(store_params)
-      redirect_to store_path(@store)
-    else
-      render 'edit'
-    end
   end
 
   def destroy
