@@ -27,7 +27,7 @@ Authors, of course, can write multiple books and this company also wants to save
 
 ##### Hint
 
-This might be a good chance to look up `distict` in the [Active Record Associates](https://guides.rubyonrails.org/association_basics.html) docs, and `scope` in the `uniqueness` section of the [Validations](https://guides.rubyonrails.org/active_record_validations.html) docs.
+This might be a good chance to look up `distinct` in the [Active Record Associates](https://guides.rubyonrails.org/association_basics.html) docs, and `scope` in the `uniqueness` section of the [Validations](https://guides.rubyonrails.org/active_record_validations.html) docs.
 
 ## Deliverables
 
