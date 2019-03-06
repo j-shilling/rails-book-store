@@ -1,6 +1,38 @@
 # Rails Book Store
 
-# CONGRADULATIONS YOUR ALMOST DONE!!!
+## before you submit
+-
+## todo
+
+- i also suggested to jake that we bold the things we do in advance for students
+- be v explicit about the steps the students need to follow
+- set a custom route to an action
+
+students should:
+- write controller method given existing route and view
+- write new route (custom) given existing view and controller method
+- write a new view to post to an existing route and controller
+- debug a broken controller action with an existing route and view
+
+## Please help, our project is almost done!
+Your project partner, Frederick Flatiron, has done a considerable amount of work on your Rails Project, but he needs you to help out with the final portion!
+
+Here's an email from Fred:
+
+---
+Hi!
+Thanks for agreeing to take a look at the last part of our Book Store Application!
+I've finished a fair bit of work, but I'd love your help taking us through to the end.
+
+**Here's what I've got so far:**
+
+Our app keeps track of Book Stores and the various
+
+
+
+Don't forget to run `bundle install` and `rails db:setup` before you run the app!
+
+---
 
 So, this app is big, *real* big, but also most of it is done for you. Take a deeeeeeep breath, relax, and remember that you **got** this. Some words of advice:
 
@@ -33,7 +65,7 @@ Authors, of course, can write multiple books and this company also wants to save
 
 ##### Hint
 
-This might be a good chance to look up `distict` in the [Active Record Associates](https://guides.rubyonrails.org/association_basics.html) docs, and `scope` in the `uniqueness` section of the [Validations](https://guides.rubyonrails.org/active_record_validations.html) docs.
+This might be a good chance to look up `distinct` in the [Active Record Associates](https://guides.rubyonrails.org/association_basics.html) docs, and `scope` in the `uniqueness` section of the [Validations](https://guides.rubyonrails.org/active_record_validations.html) docs.
 
 ## Deliverables
 

@@ -16,6 +16,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+gemfile.lock
 
 /node_modules
 /yarn-error.log
