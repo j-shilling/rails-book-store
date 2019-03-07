@@ -1,6 +1,6 @@
-class Store < ApplicationRecord
-  has_many :book_stores
-  has_many :books, through: :book_stores
+class Location < ApplicationRecord
+  has_many :book_locations
+  has_many :books, through: :book_locations
   has_many :authors, -> { distinct }, through: :books
 
   validates :name, presence: true

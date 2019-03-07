@@ -7,10 +7,10 @@
   <% end %>
 </ol>
 
-<h2><%= pluralize(@author.stores.count, "Stores") %></h2>
+<h2><%= pluralize(@author.locations.count, "Locations") %></h2>
 <ol>
-  <% @author.stores.each do |store| %>
-    <li><%= link_to store.name, store_path(store) %></li>
+  <% @author.locations.each do |location| %>
+    <li><%= link_to location.name, location_path(location) %></li>
   <% end %>
 </ol>
   

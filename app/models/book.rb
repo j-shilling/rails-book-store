@@ -1,7 +1,7 @@
 class Book < ApplicationRecord
   belongs_to :author
-  has_many :book_stores
-  has_many :stores, through: :book_stores
+  has_many :book_locations
+  has_many :locations, through: :book_locations
 
   validates :title, presence: true
   validates :price, numericality: { greater_than: 0 }

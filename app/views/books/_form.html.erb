@@ -31,8 +31,8 @@
   </p>
 
   <p>
-    <%= f.label :stores %><br>
-    <%= f.collection_check_boxes :store_ids, Store.all, :id, :name %>
+    <%= f.label :locations %><br>
+    <%= f.collection_check_boxes :location_ids, Location.all, :id, :name %>
   </p>
   
   <%= f.submit %>
