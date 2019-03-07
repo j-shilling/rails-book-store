@@ -8,6 +8,9 @@
 **/*~
 **/#*#
 
+# Ignore db schema
+db/schema.rb
+
 # Ignore bundler config.
 /.bundle
 
