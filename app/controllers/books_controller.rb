@@ -68,7 +68,7 @@ class BooksController < ApplicationController
         :first_name,
         :last_name
       ],
-      store_ids: []
+      location_ids: []
     )
   end
 
