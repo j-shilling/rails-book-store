@@ -23,6 +23,11 @@ class LocationsController < ApplicationController
   def show
   end
 
+  def max
+    @location = Location.all.max_by { |l| l.books.count }
+    render :show
+  end
+
   def edit
   end
 

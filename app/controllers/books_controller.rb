@@ -1,13 +1,13 @@
 class BooksController < ApplicationController
 
-  before_action :set_store, only: [:index]
+  before_action :set_location, only: [:index]
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
   def index
-    if @store.nil?
+    if @location.nil?
       @books = Book.all
     else
-      @books = @store.books
+      @books = @location.books
     end
   end
 
@@ -42,17 +42,17 @@ class BooksController < ApplicationController
 
   def destroy
     @book.destroy
-    if @store.nil?
+    if @location.nil?
       redirect_to books_path
     else
-      redirect_to store_books_path(@store)
+      redirect_to location_books_path(@location)
     end
   end
 
   private
 
-  def set_store
-    @store = Store.find(params[:store_id]) if !params[:store_id].nil?
+  def set_location
+    @location = Location.find(params[:location_id]) if !params[:location_id].nil?
   end
 
   def set_book
